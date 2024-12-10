@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)http://localhost:63342/random_number_bot/1.html?_ijt=c7ak02qdbet21amm113fo5k7t2&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пятигорск — Туристический портал</title>
+
+    <!-- Подключение шрифта Inter -->
+    <link href="./Пятигорск — Туристический портал_files/css2" rel="stylesheet">
+
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="./Пятигорск — Туристический портал_files/all.min.css" integrity="sha512-pIV2aEN3bE+ORCz4mKcPvsLrZNnYJ3lg8N6m3a+8PCl0qE+4Vx1s5L1Yd0XV13e5X5H6ePvgv5rRhr7eWxkg6Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Подключение AOS (Animate On Scroll) для анимаций при прокрутке -->
+    <link href="./Пятигорск — Туристический портал_files/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<img class="safum-vpn-status" id="kfnpmnanpmbomdbolkkjbjmonlebhlcl-img"  ><body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    <!--
+        ---------------------------------------
+        HEADER
+        ---------------------------------------
+        Комментарий: В шапке можно менять логотип и пункты меню.
+        Секции меню:
+        - Главная
+        - Достопримечательности
+        - Маршрут
+        - Чат-бот
+        - Контакты
+        - FAQ
+    -->
+    <header class="fade-in">
+        <div class="logo">
+         <a href="https://codepen.io/AlbertFeynman/pen/pZxPOV">Пятигорск Тур</a>   
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#section12">Главная</a></li>
+                <li><a href="#section11">Достопримечательности</a></li>
+                <li><a href="#section13">Маршрут</a></li>
+                <li><a href="#section15">Контакты</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+        ---------------------------------------
+        HERO
+        ---------------------------------------
+        Комментарий: Здесь стоит заменить фоновую картинку или 3D-сцену под тематику Пятигорска.
+        Можно обновить текст на актуальный для туристического портала.
+    -->
+    <h2 id="section12"></h2>
+    <section class="hero fade-in" id="top">
+
+
+        <canvas id="hero-3d-canvas" width="796" height="754" style="width: 796px; height: 754px;"></canvas>
+        <div class="hero__content aos-init aos-animate" data-aos="fade-up">
+            <h1>Пятигорск — жемчужина Кавказских Минеральных Вод</h1>
+            <p>Откройте для себя уникальные термальные источники, величественные горные пейзажи и насыщенную культурно-историческую атмосферу города.</p>
+            <p><strong>Планируйте свое путешествие и откройте новые грани Южной России</strong></p>
+            <a href="http://localhost:63342/random_number_bot/1.html?_ijt=c7ak02qdbet21amm113fo5k7t2&amp;_ij_reload=RELOAD_ON_SAVE#attractions" class="hero__btn hover-zoom">Исследовать <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <img class="margo" src="src/40801687-3ace-4300-a3af-76067846ef27.jpg" alt="">
+    </section>
+
+    <!--
+        ---------------------------------------
+        ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+        ---------------------------------------
+        Комментарий: Здесь можно заменить изображения и описания на реальные.
+        Для смены картинок: обновить src в блоках .attraction-card.
+        В фильтре добавить категории: "Все", "Природные", "Культурные", "Исторические".
+    -->
+    <h2 id="section11"></h2>
+    <section class="attractions fade-in aos-init" id="attractions" data-aos="fade-up">
+        <h2 >Достопримечательности Пятигорска</h2>
+        <div class="attractions__filter aos-init" data-aos="fade-up" data-aos-delay="100">
+            <!-- Комментарий: Здесь можно реализовать реальную фильтрацию через JS. -->
+            <select id="attraction-filter">
+                <option value="all">Все</option>
+                <option value="natural">Природные</option>
+                <option value="cultural">Культурные</option>
+                <option value="historical">Исторические</option>
+            </select>
+        </div>
+
+        <div class="attractions__list aos-init" data-aos="fade-up" data-aos-delay="200" id="attraction-list">
+            <!-- Пример карточек достопримечательностей -->
+            <!-- Комментарий: Заменить ссылки на реальные фото достопримечательностей. -->
+            <div class="attraction-card card hover-zoom" data-type="natural">
+                <img src="src/photo_5386841175299841814_x.jpg" alt="Гора Машук">
+                <h3>Гора Машук</h3>
+                <p>Горная вершина, откуда открывается панорамный вид на город и окрестности.</p>
+                <p class="info">Часы работы: круглосуточно<br>Билеты: подъем на канатной дороге ~300 руб.<br>Адрес: центр города</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="natural">
+                <img src="src/11i (1).webp" alt="Минеральные источники">
+                <h3>Минеральные источники</h3>
+                <p>Знаменитые лечебные воды, доступные в бюветах и источниках.</p>
+                <p class="info">Часы работы: 8:00 - 20:00<br>Билеты: бесплатно<br>Адрес: парк «Цветник»</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="cultural">
+                <img src="src/photo_5386604672925688329_y.jpg" alt="Парк Цветник">
+                <h3>Парк Цветник</h3>
+                <p>Исторический парк с клумбами, скульптурами и кафе, место отдыха горожан.</p>
+                <p class="info">Часы работы: 8:00 - 22:00<br>Билеты: бесплатно<br>Адрес: ул. Буачидзе, центр</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="historical">
+                <img src="src/photo_5386841175299841829_x.jpg" alt="Лермонтовская Галерея">
+                <h3>Лермонтовские места</h3>
+                <p>Места, связанные с жизнью и творчеством М.Ю. Лермонтова (дом-музей, памятник).</p>
+                <p class="info">Часы работы: 10:00 - 18:00<br>Билеты: от 100 руб.<br>Адрес: Лермонтовская ул.</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="cultural">
+                <img src="src/i (2).webp" alt="Канатная дорога">
+                <h3>Канатная дорога</h3>
+                <p>Живописный подъем на гору Машук по канатной дороге.</p>
+                <p class="info">Часы работы: 9:00 - 20:00<br>Билеты: ~300 руб.<br>Адрес: у подножия Машука</p>
+            </div class="attraction-card card hover-zoom" data-type="cultural">
+            <div class="attraction-card card hover-zoom" data-type="historical">
+                <img src="src/S600xU_2x.webp" alt="Провал">
+                <h3>Спуск к провалу</h3>
+                <p>Загадочный спуск в глубь горы, к воде со специфичным запахом, так как Родник насыщен сероводородом.</p>
+                <p class="info">Часы работы: 10:00 - 18:00<br>Билеты бесплатно.<br>Адрес:Бульвар.Гагарина</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="historical">
+                <img src="src/i 222(1).webp" alt="Домик Лермонтова">
+                <h3>Театр Оперетты</h3>
+                <p>Ставропольский государственный краевой театр оперетты — российский театр оперетты, расположенный в городе Пятигорск Ставропольского края. Основан 10 марта 1939 году как Пятигорский театр музыкальной комедии, нынешнее своё название театр получил в 1997 году.</p>
+                <p class="info">с 10:00 до 19:00 без выходных.<br>Билеты от 200 до 800 рублей.<br>Проспект Кирова 17.</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="historical">
+                <img src="src/img-20181026-095732468.jpg" alt="Эолова Арфа">
+                <h3>Эолова Арфа</h3>
+                <p>Это памятник архитектуры, созданный в 1830-1831 годах. Здесь гулял М.Ю. Лермонтов, который упоминает беседку в своем творчестве.</p>
+                <p class="info">Часы работы: 10:00 - 22:00<br>Билеты бесплатно.<br>Адрес: Емануелевский парк</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="historical">
+                <img src="src/caption.jpg" alt="Китайская Беседка">
+                <h3>Китайская Беседка</h3>
+                <p> Одна из главных и любимых туристических достопримечательностей и локаций для отдыха местных жителей Пятигорска. Расположена она на территории старинного парка «Цветник»</p>
+                <p class="info">с 10:00 до 22:00.<br>Бесплатно<br>Емануелевский парк.</p>
+            </div>
+    </section>
+
+    <!--
+        ---------------------------------------
+        ОПТИМАЛЬНЫЙ МАРШРУТ
+        ---------------------------------------
+        Комментарий: Здесь можно через JS сымитировать подбор маршрута на основе вводимых предпочтений.
+        При реальной интеграции можно писать код в JS-скрипте ниже.
+    -->
+        <h2 id="section13"></h2>
+    <section class="route-planner fade-in aos-init" id="route-planner" data-aos="fade-up">
+        <h2>Оптимальный маршрут</h2>
+        <p>Укажите ваши предпочтения, и мы предложим вам оптимальный маршрут для знакомства с Пятигорском.</p>
+        <form class="route-form aos-init" id="route-form" data-aos="fade-up" data-aos-delay="100">
+            <select name="type" required="">
+                <option value="">Тип достопримечательностей</option>
+                <option value="natural">Природные</option>
+                <option value="cultural">Культурные</option>
+                <option value="historical">Исторические</option>
+            </select>
+            <input type="number" name="budget" placeholder="Бюджет (руб.)" required="">
+            <input type="number" name="days" placeholder="Количество дней" required="">
+            <select name="transport" required="">
+                <option value="">Удобный транспорт</option>
+                <option value="foot">Пешком</option>
+                <option value="taxi">Такси</option>
+                <option value="bus">Общественный транспорт</option>
+            </select>
+            <button type="submit">Подобрать маршрут</button>
+        </form>
+        <div class="route-result aos-init" id="route-result" data-aos="fade-up" data-aos-delay="200">
+            <!-- Здесь будет показан результат (маршрут) после расчета через JS -->
+        </div>
+    </section>
+
+    <!--
+        ---------------------------------------
+        ЧАТ-БОТ
+        ---------------------------------------
+        Комментарий: Здесь можно подключить реальный API, например GPT.
+        В данном демо-версии используем статические ответы.
+        В JS-коде ниже указано, где подключить API.
+    -->
+    
+    <!--
+        ---------------------------------------
+        КОНТАКТЫ
+        ---------------------------------------
+    -->
+    <h2 id="section15"></h2>
+    <section class="contacts fade-in aos-init" id="contacts" data-aos="fade-up">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+            <p>Адрес: г. Пятигорск, ул. Примерная, д. 1</p>
+            <p>E-mail: <a href="mailto:info@visit-pyatigorsk.ru">info@visit-pyatigorsk.ru</a></p>
+            <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+            <p>Социальные сети: <a href="http://localhost:63342/random_number_bot/1.html?_ijt=c7ak02qdbet21amm113fo5k7t2&amp;_ij_reload=RELOAD_ON_SAVE#">VK</a>, <a href="http://localhost:63342/random_number_bot/1.html?_ijt=c7ak02qdbet21amm113fo5k7t2&amp;_ij_reload=RELOAD_ON_SAVE#">Instagram</a></p>
+        </div>
+        <form class="contact-form card aos-init" data-aos="fade-up" data-aos-delay="100">
+            <input type="text" placeholder="Ваш телефон или e-mail" required="">
+            <textarea placeholder="Ваш вопрос или сообщение" rows="4" required=""></textarea>
+            <button type="submit">Отправить</button>
+            <p class="note">Нажимая на кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+        </form>
+    </section>
+
+    <!--
+        ---------------------------------------
+        FAQ
+        ---------------------------------------
+        Комментарий: Добавьте вопросы и ответы, связанные с туризмом в Пятигорске.
+    -->
+    <h2 id="section16"></h2>
+    
+        
+
+    <!--
+        ---------------------------------------
+        FOOTER
+        ---------------------------------------
+    -->
+    <footer class="fade-in backs">
+        <p class="thism">2024 © Туристический портал Пятигорска</p>
+        <p class="thism">Все права защищены. Информация предназначена для планирования туристических поездок.</p>
+    </footer>
+
+    <!-- Подключение библиотек JS -->
+    <script src="./Пятигорск — Туристический портал_files/three.min.js.загрузка"></script>
+    <script src="./Пятигорск — Туристический портал_files/OrbitControls.min.js.загрузка"></script>
+    <script src="./Пятигорск — Туристический портал_files/aos.js.загрузка"></script>
+    <script src="scripts.js"></script>
+    </body></html>
